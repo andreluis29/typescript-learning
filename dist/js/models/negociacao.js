@@ -13,4 +13,7 @@ export class Negociacao {
     getValor() {
         return this.valor;
     }
+    getVolume() {
+        return this.quantidade * this.valor;
+    }
 }
