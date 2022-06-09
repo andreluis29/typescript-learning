@@ -22,7 +22,7 @@ export class Negociacao {
     return this.quantidade * this.valor;
   }
 
-  get data(): Date { 
+  get data(): Date {
     // Metódo criado de forma defensiva contra o setDate, visando impossibilitar a mudança do atributo original.
     // Mantém o atributo em estado original através de uma nova data gerada para que sirva de modelo para ficar inaterável.
     const data = new Date(this._data.getTime());
